@@ -5,7 +5,6 @@ function Menu:enteredState()
 
   self.background = game.preloaded_images["title.png"]
   local width, height = self.background:getWidth(), self.background:getHeight()
-  print(g.getWidth(), g.getHeight(), width, height)
   self.offset = {x = (g.getWidth() - width) / 2, y = (g.getHeight() - height) / 2}
 
   self.two_player_button = {414,444, 800,444, 800,530, 414,530}

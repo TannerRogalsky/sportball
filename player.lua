@@ -102,7 +102,6 @@ function Player:keyreleased(key, unicode)
 end
 
 function Player:joystickpressed(button)
-  print("pressed", self, button)
   local action = self.control_map.pressed[button]
   if is_func(action) then action(self) end
 end
